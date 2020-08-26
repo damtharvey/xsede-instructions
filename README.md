@@ -43,7 +43,10 @@ projects
 #SBATCH --account=cc123xy  ## This is the charge ID that you found before.
 #SBATCH --partition=GPU-AI
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:volta16:8  ## This has to be in the form gpu:type:number where type is either volta16 or volta32. volta16 is 16G V100, while volta32 is 32G V100. If you use volta16, number can be 1-8. If you use volta32, number can be 1-16.
+#SBATCH --gres=gpu:volta16:8  ## This has to be in the form gpu:type:number where type is either
+                              ## volta16 or volta32. volta16 is 16G V100, while volta32 is 32G V100.
+                              ## If you use volta16, number can be 1-8.
+                              ## If you use volta32, number can be 1-16.
 #SBATCH --time=01:00:00  ## time limit, in the form hours:minutes:seconds
 #SBATCH --mail-type=ALL  ## Choose what you want to be emailed about.
 #SBAtCH --mail-user=u1234567@utah.edu  ## Your email address.
