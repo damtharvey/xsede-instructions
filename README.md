@@ -17,7 +17,10 @@ ssh username@bridges.psc.xsede.org
 
 4. Somehow get your `environment.yml` in here. You can use `scp` (or WinSCP). They have Git if you want to use that.
 
-5. They have Environment Modules. To see environment modules are available, `module avail`
+5. They have Environment Modules. To see environment modules are available, 
+```
+module avail
+```
 Take note of the one(s) you want to use. For most of us, `cuda/10.1` and `anaconda3` are sufficient.
 
 6. For now, use `anaconda3` to set up your environment. Assuming your `environment.yml` is in this directory,
@@ -32,7 +35,7 @@ projects
 ```
 
 8. Write your batch script. See the [Bridges User Guide](https://portal.xsede.org/psc-bridges) for instructions on how to do this. Below is an example with comments.
-```bash
+```sh
 #!/bin/bash  ## This specifies the shell that will interpret the script. There are a few you can choose from.
 
 ## The following lines preceded by #SBATCH are sbatch options.
@@ -67,3 +70,5 @@ sbatch some_batch_script.sh
 * For each additional environment you want to use, repeat steps 2-6.
 * GPU time is calculated as **total GPU time**. Therefore, if you use 16 GPUs for 1 hour, you will use 16 GPU hours.
 * If you need technical support, you can go to https://portal.xsede.org/group/xup/help-desk.
+
+If these instructions are wrong, please let me know.
