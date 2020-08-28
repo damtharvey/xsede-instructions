@@ -49,7 +49,7 @@ projects
                               ## If you use volta32, number can be 1-16.
 #SBATCH --time=01:00:00  ## time limit, in the form hours:minutes:seconds
 #SBATCH --mail-type=ALL  ## Choose what you want to be emailed about.
-#SBAtCH --mail-user=u1234567@utah.edu  ## Your email address.
+#SBATCH --mail-user=u1234567@utah.edu  ## Your email address.
 
 source /etc/profile.d/modules.sh  ## Required for using module in GPU-AI
 
