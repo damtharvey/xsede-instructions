@@ -17,7 +17,7 @@ ssh username@bridges.psc.xsede.org
 
 4. Somehow get your `environment.yml` in here. You can use `scp` (or WinSCP). They have Git if you want to use that.
 
-5. They have Environment Modules. To see environment modules are available, 
+5. They have Environment Modules. To see which environment modules are available, 
 ```
 module avail
 ```
